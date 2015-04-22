@@ -88,6 +88,13 @@
 		>;
 	};
 
+	i2c1a_pins: pinmux_i2c1a_pins {
+		pinctrl-single,pins = <
+			0x180 0x73	/* uart1_rxd.i2c1_sda, SLEWCTRL_SLOW | INPUT_PULLUP | MODE3 */
+			0x184 0x73	/* uart1_txd.i2c1_scl, SLEWCTRL_SLOW | INPUT_PULLUP | MODE3 */
+		>;
+	};
+
 	i2c2_pins: pinmux_i2c2_pins {
 		pinctrl-single,pins = <
 			0x178 0x73 /* (SLEWCTRL_SLOW | PIN_INPUT_PULLUP | MUX_MODE3) uart1_ctsn.i2c2_sda */
